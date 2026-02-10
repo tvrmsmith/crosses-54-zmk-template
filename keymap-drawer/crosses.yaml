@@ -3,8 +3,8 @@ layers:
   Base:
   - ['~', '1', '2', '3', '4', '5', '6', '7', '8', '9']
   - ['0', '`', '$$mdi:keyboard-tab$$', Q, W, E, R, T, Y, U]
-  - [I, O, P, '$$mdi:backspace$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G]
-  - [H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$', Z, X, C]
+  - [I, O, P, '$$mdi:backspace$$', {t: '$$mdi:keyboard-esc$$', h: 'Hyper'}, {t: A, h: '$$mdi:apple-keyboard-shift$$'}, {t: S, h: 'Ctl'}, {t: D, h: 'Alt'}, {t: F, h: 'Gui'}, G]
+  - [H, {t: J, h: 'Gui'}, {t: K, h: 'Alt'}, {t: L, h: 'Ctl'}, {t: ;, h: '$$mdi:apple-keyboard-shift$$'}, '''', '$$mdi:apple-keyboard-shift$$', Z, X, C]
   - - V
     - B
     - N
@@ -13,17 +13,17 @@ layers:
     - .
     - /
     - $$mdi:keyboard-esc$$
-    - {t: LGUI, h: Mouse}
-    - Lower
-  - ['$$mdi:keyboard-space$$', '$$mdi:keyboard-return$$', Raise, '$$mdi:apple-keyboard-option$$']
+    - Mouse
+    - '$$mdi:keyboard-space$$'
+  - [Lower, Raise, '$$mdi:keyboard-return$$', {t: Del, h: '$$mdi:backspace$$'}]
   Lower:
-  - ['~', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-  - ['0', '`', '$$mdi:keyboard-tab$$', '1', '2', '3', '4', '5', '6', '7']
+  - [{t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}]
+  - [{t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, '1', '2', '3', '4', '5', '6', '7']
   - - '8'
     - '9'
     - '0'
-    - $$mdi:backspace$$
-    - $$mdi:bluetooth-off$$
+    - {t: ▽, type: trans}
+    - {t: '$$mdi:bluetooth-off$$'}
     - {h: '1', s: '$$mdi:bluetooth-connect$$'}
     - {h: '2', s: '$$mdi:bluetooth-connect$$'}
     - {h: '3', s: '$$mdi:bluetooth-connect$$'}
@@ -33,115 +33,88 @@ layers:
     - $$mdi:arrow-down-bold$$
     - $$mdi:arrow-up-bold$$
     - $$mdi:arrow-right-bold$$
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - $$mdi:apple-keyboard-shift$$
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-  - - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: LGUI, h: Mouse}
-    - {type: held}
-  - - $$mdi:keyboard-space$$
-    - $$mdi:keyboard-return$$
-    - {t: '$$mdi:transfer$$', type: trans}
-    - $$mdi:apple-keyboard-option$$
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - [{type: held}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}]
   Raise:
-  - ['~', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-  - ['0', '`', '$$mdi:keyboard-tab$$', '!', '@', '#', $, '%', ^, '&']
+  - [{t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}]
+  - [{t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, '!', '@', '#', $, '%', ^, '&']
   - - KP MULTIPLY
     - (
     - )
-    - $$mdi:backspace$$
-    - $$mdi:apple-keyboard-control$$
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
   - - '-'
     - '='
     - '['
     - ']'
     - \
-    - '`'
-    - $$mdi:apple-keyboard-shift$$
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-  - - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - _
     - +
     - '{'
     - '}'
     - '|'
     - '~'
-    - {t: LGUI, h: Mouse}
-    - {t: '$$mdi:transfer$$', type: trans}
-  - - $$mdi:keyboard-space$$
-    - $$mdi:keyboard-return$$
-    - {type: held}
-    - $$mdi:apple-keyboard-option$$
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - [{t: ▽, type: trans}, {type: held}, {t: ▽, type: trans}, {t: ▽, type: trans}]
   Mouse:
-  - - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-  - - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-  - - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
+  - [{t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}]
+  - [{t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}]
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: '$$mdi:mouse-right-click$$', h: right}
     - {t: '$$mdi:mouse$$', h: middle}
     - {t: '$$mdi:mouse-left-click$$', h: left}
-    - {t: '$$mdi:transfer$$', type: trans}
-  - - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-  - - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '&studio_unlock'
+    - {t: ▽, type: trans}
     - {type: held}
-    - {type: held alternate}
-  - - {t: '$$mdi:transfer$$', type: trans}
-    - {t: '$$mdi:transfer$$', type: trans}
-    - {type: held alternate}
-    - {t: '$$mdi:transfer$$', type: trans}
+    - {t: ▽, type: trans}
+  - [{t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}]
