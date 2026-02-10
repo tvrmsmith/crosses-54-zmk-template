@@ -21,10 +21,10 @@
     behaviors {
         esc_hyper: esc_hyper {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&hyper &kp ESC>;
+            bindings = <&hyper>, <&kp>;
         };
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
@@ -57,7 +57,7 @@
             bindings = <
                 &kp TILDE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8     &kp N9   &kp N0    &kp GRAVE
                 &kp TAB   &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-                &esc_hyper &hml LSHIFT A  &hml LCTRL S  &hml LALT D  &hml LGUI F  &kp G    &kp H &hmr RGUI J  &hmr RALT K     &hmr RCTRL L   &hmr RSHIFT SEMI &kp SQT
+                &esc_hyper 0 ESC &hml LSHIFT A  &hml LCTRL S  &hml LALT D  &hml LGUI F  &kp G    &kp H &hmr RGUI J  &hmr RALT K     &hmr RCTRL L   &hmr RSHIFT SEMI &kp SQT
                 &kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B    &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
                             &mo 3 &kp SPACE &mo 1   &mo 2 &kp RET &kp DEL
             >;
