@@ -24,7 +24,7 @@
             #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&hyper>, <&kp ESC>;
+            bindings = <&hyper &kp ESC>;
         };
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
