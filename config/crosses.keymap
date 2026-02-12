@@ -98,3 +98,11 @@
         };
     };
 };
+
+// Override trackball sensitivity - reduce by 50% from upstream default
+&trackball_peripheral_split {
+  input-processors
+    = <&zip_xy_to_scroll_mapper>
+    , <&zip_scroll_scaler 1 4>  // Changed from 1 2 to 1 4 for 50% less sensitivity
+    , <&zip_ble_report_rate_limit>;
+};
