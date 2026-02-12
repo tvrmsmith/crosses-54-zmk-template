@@ -1,120 +1,222 @@
 layout: {zmk_keyboard: crosses, layout_name: gggw_crosses_54_layout}
 layers:
   Base:
-  - ['~', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-  - ['0', '`', '$$mdi:keyboard-tab$$', Q, W, E, R, T, Y, U]
-  - [I, O, P, '$$mdi:backspace$$', {t: '$$mdi:keyboard-esc$$', h: 'Hyper'}, {t: A, h: '$$mdi:apple-keyboard-shift$$'}, {t: S, h: 'Ctl'}, {t: D, h: 'Alt'}, {t: F, h: 'Gui'}, G]
-  - [H, {t: J, h: 'Gui'}, {t: K, h: 'Alt'}, {t: L, h: 'Ctl'}, {t: ;, h: '$$mdi:apple-keyboard-shift$$'}, '''', '$$mdi:apple-keyboard-shift$$', Z, X, C]
-  - - V
-    - B
-    - N
-    - M
-    - ','
-    - .
-    - /
-    - $$mdi:keyboard-esc$$
-    - Mouse
-    - '$$mdi:keyboard-space$$'
-  - [Lower, Raise, '$$mdi:keyboard-return$$', {t: Del, h: '$$mdi:backspace$$'}]
+  - '~'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '`'
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BSPC
+  - {t: ESC, h: '&hyper'}
+  - {t: A, h: LSHIFT}
+  - {t: S, h: LCTRL}
+  - {t: D, h: LALT}
+  - {t: F, h: LGUI}
+  - G
+  - H
+  - {t: J, h: RGUI}
+  - {t: K, h: RALT}
+  - {t: L, h: RCTRL}
+  - {t: ;, h: RSHIFT}
+  - ''''
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ESC
+  - DEL
+  - {t: SPACE, h: Lower}
+  - Mouse
+  - RET
+  - {t: SPACE, h: Raise}
+  - DEL
   Lower:
-  - [{t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}]
-  - [{t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, '1', '2', '3', '4', '5', '6', '7']
-  - - '8'
-    - '9'
-    - '0'
-    - {t: ▽, type: trans}
-    - {t: '$$mdi:bluetooth-off$$'}
-    - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-    - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-    - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-    - {h: '4', s: '$$mdi:bluetooth-connect$$'}
-    - {h: '5', s: '$$mdi:bluetooth-connect$$'}
-  - - $$mdi:arrow-left-bold$$
-    - $$mdi:arrow-down-bold$$
-    - $$mdi:arrow-up-bold$$
-    - $$mdi:arrow-right-bold$$
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - [{type: held}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}]
+  - {t: ▽, type: trans}
+  - BRI DN
+  - BRI UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PREV
+  - PP
+  - NEXT
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: ▽, type: trans}
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Raise:
-  - [{t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}]
-  - [{t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, '!', '@', '#', $, '%', ^, '&']
-  - - KP MULTIPLY
-    - (
-    - )
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - '-'
-    - '='
-    - '['
-    - ']'
-    - \
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - _
-    - +
-    - '{'
-    - '}'
-    - '|'
-    - '~'
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - [{t: ▽, type: trans}, {type: held}, {t: ▽, type: trans}, {t: ▽, type: trans}]
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - Ctl+Gui+Q
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - {t: ▽, type: trans}
+  - \
+  - '|'
+  - '-'
+  - '['
+  - '{'
+  - _
+  - +
+  - '}'
+  - ']'
+  - '='
+  - '?'
+  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
   Mouse:
-  - [{t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}]
-  - [{t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}]
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: '$$mdi:mouse-right-click$$', h: right}
-    - {t: '$$mdi:mouse$$', h: middle}
-    - {t: '$$mdi:mouse-left-click$$', h: left}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - '&studio_unlock'
-    - {t: ▽, type: trans}
-    - {type: held}
-    - {t: ▽, type: trans}
-  - [{t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}, {t: ▽, type: trans}]
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp RCLK'
+  - '&mkp MCLK'
+  - '&mkp LCLK'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&studio_unlock'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
