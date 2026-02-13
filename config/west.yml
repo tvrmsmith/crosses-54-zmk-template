@@ -14,7 +14,7 @@ manifest:
       revision: ac7f75b8591d39aaf3b66b9d26f26c9ed921a009
     - name: gggw-zmk-keebs
       remote: Good-Great-Grand-Wonderful
-      revision: main
+      revision: zephyr-4.1
       import: config/west.yml
   self:
     path: config
